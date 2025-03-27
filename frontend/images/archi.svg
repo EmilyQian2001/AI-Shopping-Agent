@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1400">
+  <!-- Background -->
+  <rect width="1600" height="1400" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="800" y="70" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">AI Shopping Assistant Architecture</text>
+  
+  <!-- User -->
+  <rect x="700" y="120" width="200" height="80" rx="20" ry="20" fill="#e3f2fd" stroke="#2196f3" stroke-width="2.5" />
+  <text x="800" y="170" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">User</text>
+  
+  <!-- Product Queries Arrow -->
+  <line x1="800" y1="200" x2="800" y2="280" stroke="#333" stroke-width="2" />
+  <polygon points="800,280 795,270 805,270" fill="#333" />
+  <text x="880" y="250" font-family="Arial" font-size="16" fill="#666">Product Queries</text>
+  
+  <!-- React Client -->
+  <rect x="600" y="280" width="400" height="120" rx="20" ry="20" fill="#e8f5e9" stroke="#4caf50" stroke-width="2.5" />
+  <text x="800" y="330" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">React Client</text>
+  <text x="800" y="365" font-family="Arial" font-size="16" text-anchor="middle" fill="#666">Model Selector UI</text>
+  
+  <!-- API Requests Arrow -->
+  <line x1="800" y1="400" x2="800" y2="480" stroke="#333" stroke-width="2" />
+  <polygon points="800,480 795,470 805,470" fill="#333" />
+  <text x="880" y="450" font-family="Arial" font-size="16" fill="#666">API Requests</text>
+  
+  <!-- WebSocket Log Stream -->
+  <path d="M 1000 340 Q 1220 340 1220 560 Q 1220 680 1000 680" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="8,5" />
+  <text x="1270" y="530" font-family="Arial" font-size="16" fill="#666">WebSocket</text>
+  <text x="1270" y="555" font-family="Arial" font-size="16" fill="#666">Log Stream</text>
+  
+  <!-- FastAPI Backend -->
+  <rect x="480" y="480" width="640" height="210" rx="20" ry="20" fill="#fff3e0" stroke="#ff9800" stroke-width="2.5" />
+  <text x="800" y="520" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">FastAPI Backend</text>
+  
+  <!-- Session Store -->
+  <rect x="520" y="540" width="250" height="80" rx="10" ry="10" fill="#ffecb3" stroke="#ffa000" stroke-width="2" /> -->
+  <text x="645" y="585" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Interactive Session</text> -->
+  
+  <!-- Model Selector -->
+  <rect x="800" y="540" width="250" height="80" rx="10" ry="10" fill="#e0f7fa" stroke="#00bcd4" stroke-width="2" />
+  <text x="925" y="585" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Model Selection</text>
+  <text x="925" y="610" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Perplexity / OpenAI / Hybrid</text>
+  
+  <!-- Task Distribution Arrow -->
+  <line x1="800" y1="690" x2="800" y2="770" stroke="#333" stroke-width="2" />
+  <text x="810" y="740" font-family="Arial" font-size="16" fill="#666">Task Distribution</text>
+  
+  <!-- Horizontal line for distribution -->
+  <line x1="200" y1="770" x2="1400" y2="770" stroke="#333" stroke-width="2" />
+  
+  <!-- Vertical lines to each agent -->
+  <line x1="300" y1="770" x2="300" y2="820" stroke="#333" stroke-width="2" />
+  <polygon points="300,820 295,810 305,810" fill="#333" />
+  
+  <line x1="700" y1="770" x2="700" y2="820" stroke="#333" stroke-width="2" />
+  <polygon points="700,820 695,810 705,810" fill="#333" />
+  
+  <line x1="1100" y1="770" x2="1100" y2="820" stroke="#333" stroke-width="2" />
+  <polygon points="1100,820 1095,810 1105,810" fill="#333" />
+  
+  <line x1="1300" y1="770" x2="1300" y2="820" stroke="#333" stroke-width="2" />
+  <polygon points="1300,820 1295,810 1305,810" fill="#333" />
+  
+  <!-- Clarification Agent -->
+  <rect x="200" y="820" width="200" height="110" rx="20" ry="20" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2.5" />
+  <text x="300" y="880" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Clarification Agent</text>
+  <!-- <text x="300" y="895" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">(Model Selection)</text> -->
+  <!-- <text x="300" y="915" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">generate_clarifications()</text> -->
+  
+  <!-- Recommendation Agent -->
+  <rect x="480" y="820" width="440" height="240" rx="20" ry="20" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2.5" />
+  <text x="700" y="860" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Recommendation Agent</text>
+  <!-- <text x="700" y="870" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">generate_recommendations()</text> -->
+  
+  <!-- Model Options in Recommendation Agent -->
+  <rect x="510" y="890" width="380" height="40" rx="10" ry="10" fill="#e1bee7" stroke="#9c27b0" stroke-width="2" />
+  <text x="700" y="915" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Model Selection Agent</text>
+  
+  <!-- OpenAI Box -->
+  <rect x="510" y="940" width="150" height="50" rx="12" ry="12" fill="#d1c4e9" stroke="#673ab7" stroke-width="2" />
+  <text x="590" y="970" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">OpenAI API</text>
+  <text x="590" y="985" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">gpt-4-turbo</text>
+  
+  <!-- Plus Sign -->
+  <circle cx="660" y="965" r="18" fill="#ffccbc" stroke="#ff5722" stroke-width="2" />
+  <text x="695" y="970" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">or/and</text>
+  
+  <!-- Perplexity Box -->
+  <rect x="730" y="940" width="150" height="50" rx="12" ry="12" fill="#bbdefb" stroke="#2196f3" stroke-width="2" />
+  <text x="810" y="970" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Perplexity API</text>
+  <text x="810" y="985" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">sonar-pro</text>
+  
+  <!-- Combine Label -->
+  <text x="700" y="1020" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Combine Results</text>
+  
+  <!-- Search Agent -->
+  <rect x="1000" y="820" width="200" height="110" rx="20" ry="20" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2.5" />
+  <text x="1100" y="860" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Search Agent</text>
+  <text x="1100" y="890" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">(Serper API)</text>
+  <!-- <text x="1100" y="905" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">search_with_serper()</text> -->
+  
+  <!-- Content Extraction Agent -->
+  <rect x="1250" y="820" width="200" height="110" rx="20" ry="20" fill="#fce4ec" stroke="#e91e63" stroke-width="2.5" />
+  <text x="1350" y="860" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Content</text>
+  <text x="1350" y="890" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Extraction Agent</text>
+  <!-- <text x="1300" y="910" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">get_review_content()</text> -->
+  
+  <!-- URLs Arrow -->
+  <line x1="1250" y1="875" x2="1170" y2="875" stroke="#333" stroke-width="2" />
+  <polygon points="1200,875 1190,870 1190,880" fill="#333" />
+  <text x="1205" y="860" font-family="Arial" font-size="12" fill="#666">URLs</text>
+  
+  <!-- Extracted Content Arrow -->
+  <line x1="1300" y1="930" x2="1300" y2="1010" stroke="#333" stroke-width="2" />
+  <line x1="1300" y1="1010" x2="700" y2="1010" stroke="#333" stroke-width="2" />
+  <line x1="700" y1="1010" x2="700" y2="1090" stroke="#333" stroke-width="2" />
+  <polygon points="700,1090 695,1080 705,1080" fill="#333" />
+  <text x="1000" y="1000" font-family="Arial" font-size="12" fill="#666">Extracted Content</text>
+  
+  <!-- Review Summary Agent -->
+  <rect x="550" y="1090" width="300" height="110" rx="20" ry="20" fill="#ffebee" stroke="#f44336" stroke-width="2.5" />
+  <text x="700" y="1130" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Review Summary Agent</text>
+  <text x="700" y="1155" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">(Perplexity API)</text>
+  <!-- <text x="700" y="1175" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">summarize_product_info()</text> -->
+  
+  <!-- Background Task -->
+  <rect x="1050" y="1090" width="250" height="110" rx="20" ry="20" fill="#f9fbe7" stroke="#8bc34a" stroke-width="2.5" stroke-dasharray="6,3" />
+  <text x="1175" y="1130" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Background Task</text>
+  <text x="1175" y="1155" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">fetch_product_details()</text>
+  <text x="1175" y="1175" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Product details & reviews async</text>
+  
+  <!-- Connection to Background Task -->
+  <line x1="850" y1="1145" x2="1050" y2="1145" stroke="#8bc34a" stroke-width="2" stroke-dasharray="6,3" />
+  <polygon points="1050,1145 1040,1140 1040,1150" fill="#8bc34a" />
+</svg>

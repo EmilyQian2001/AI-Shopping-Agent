@@ -1,0 +1,36 @@
+stateDiagram-v2
+    [*] --> INITIAL: New session starts
+    
+    INITIAL --> MODEL_SELECTION: User selects model
+    MODEL_SELECTION --> ANALYZING_QUERY: Model selection completed
+    
+    ANALYZING_QUERY --> CLARIFYING: Query not specific enough
+    ANALYZING_QUERY --> QUERYING: Query specific enough
+    
+    CLARIFYING --> CLARIFYING: More preferences info needed
+    CLARIFYING --> QUERYING: Sufficient preferences collected, or attempt count >=3, or preference categories >=2
+    
+    QUERYING --> RECOMMENDING: Ask LLM for product recommendations
+    
+    RECOMMENDING --> SEARCHING: Generate product recommendations
+    
+    SEARCHING --> DETAILING: Start fetch product details
+    
+    DETAILING --> READY: Product details collection complete
+    
+    state Error Handling {
+        [*] --> ERROR
+        ERROR --> [*]
+    }
+    
+    INITIAL --> ERROR: Error occurred
+    ANALYZING_QUERY --> ERROR: Error occurred
+    CLARIFYING --> ERROR: Error occurred
+    QUERYING --> ERROR: Error occurred
+    RECOMMENDING --> ERROR: Error occurred
+    SEARCHING --> ERROR: Error occurred
+    DETAILING --> ERROR: Error occurred
+    
+    note right of READY
+        Product details available
+    end note

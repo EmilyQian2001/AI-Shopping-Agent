@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Shopping Assistant Workflow</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <style>
+                :root {
+                    --frontend: #60a5fa;
+                    --backend: #34d399;
+                    --api: #fbbf24;
+                    --database: #a78bfa;
+                    --arrow: #6b7280;
+                }
+                
+                .icon { 
+                    width: 48px;
+                    height: 48px;
+                    fill: white;
+                }
+                .label {
+                    font: 14px 'Segoe UI', sans-serif;
+                    fill: #374151;
+                }
+                .phase-box {
+                    stroke: #e5e7eb;
+                    stroke-width: 2;
+                    fill: #f9fafb;
+                    rx: 8;
+                }
+            </style>
+
+            <rect x="20" y="60" width="1160" height="680" class="phase-box"/>
+            <text x="40" y="40" font-size="20" font-weight="bold">AI Shopping Assistant Workflow v2.0</text>
+
+            <g transform="translate(100 100)">
+                <rect width="200" height="120" fill="var(--frontend)" rx="10"/>
+                <image x="76" y="20" class="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTEyIDJhMyAzIDAgMCAwLTMgM3Y3YTMgMyAwIDAgMCA2IDBWNWEzIDMgMCAwIDAtMy0zem0xMSAxMGE0IDQgMCAwIDAtNC00SDVhNCA0IDAgMCAwLTQgNHYzYTQgNCAwIDAgMCA0IDNoMTRhNCA0IDAgMCAwIDQtNHYtM3oiLz48L3N2Zz4="/>
+                <text x="100" y="90" class="label" text-anchor="middle">User Interface</text>
+                <text x="100" y="110" class="label" text-anchor="middle">(React on Vercel)</text>
+            </g>
+
+            <g transform="translate(350 100)">
+                <rect width="200" height="120" fill="var(--frontend)" rx="10"/>
+                <image x="76" y="20" class="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTggMTBoOCBNOCAxNGg4IE0xMCAyMkgxNGEyIDIgMCAwMDItMlY2YTIgMiAwIDAwLTItMkgxMGEyIDIgMCAwMC0yIDJ2MTRhMiAyIDAgMDAyIDJ6Ii8+PC9zdmc+"/>
+                <text x="100" y="90" class="label" text-anchor="middle">Dynamic Q&A</text>
+                <text x="100" y="110" class="label" text-anchor="middle">(Budget/Features/Usage)</text>
+            </g>
+
+            <g transform="translate(600 100)">
+                <rect width="200" height="120" fill="var(--backend)" rx="10"/>
+                <image x="76" y="20" class="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTIwIDE0YTYgNiAwIDAwLTYtNkgxMGE2IDYgMCAwMC02IDZ2MmEyIDIgMCAwMDIgMmgxMmEyIDIgMCAwMDItMnYtMnoiLz48cGF0aCBkPSJNMTYgNlY0YTIgMiAwIDAwLTItMkgxMGEyIDIgMCAwMC0yIDJ2MiIvPjwvc3ZnPg=="/>
+                <text x="100" y="90" class="label" text-anchor="middle">API Server</text>
+                <text x="100" y="110" class="label" text-anchor="middle">(FastAPI on Railway)</text>
+            </g>
+
+            <g transform="translate(850 100)">
+                <rect width="200" height="120" fill="var(--api)" rx="10"/>
+                <image x="76" y="20" class="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01ek0yIDE3bDEwIDUgMTAtNW0wIDVWMiIvPjwvc3ZnPg=="/>
+                <text x="100" y="90" class="label" text-anchor="middle">External Services</text>
+                <text x="100" y="110" class="label" text-anchor="middle">(Perplexity/Serper)</text>
+            </g>
+
+            <g stroke="var(--arrow)" stroke-width="2" marker-end="url(#arrow)">
+                <path d="M250 160 L350 160"/>
+                <path d="M500 160 L600 160"/>
+                <path d="M750 160 L850 160"/>
+                <path d="M850 160 Q950 160 950 250 L950 350 Q950 400 900 450 L200 450 L200 250 Q200 200 150 160"/>
+            </g>
+
+            <g class="label">
+                <text x="300" y="150">1. 用户请求 (HTTP POST)</text>
+                <text x="550" y="150">2. 生成推荐 & 搜索请求</text>
+                <text x="800" y="150">3. 调用外部API</text>
+                <text x="500" y="420">4. 数据清洗: 过滤二手商品/验证预算</text>
+                <text x="500" y="440">5. 整合商品信息+评测</text>
+                <text x="300" y="380">6. 返回结构化结果 (JSON)</text>
+            </g>
+
+            <g transform="translate(100 300)">
+                <rect width="300" height="80" fill="#e0f2fe" rx="8"/>
+                <text x="150" y="30" text-anchor="middle" font-weight="bold">Deployment</text>
+                <text x="150" y="50">Frontend: Vercel</text>
+                <text x="150" y="70">Backend: Railway</text>
+            </g>
+
+            <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <path d="M0,0 L0,6 L9,3 z" fill="var(--arrow)"/>
+                </marker>
+            </defs>
+        </svg>
+    </div>
+</body>
+</html>
